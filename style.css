@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   width:67%;
+   margin: auto;
+}
+.header-container{
+    width: 70%;
+    margin-top: 7%;
+    
+}
+.header-name{
+    font-family:'Playfair Display', serif;
+    font-size: 48px;
+    width: 700;
+}
+.header-description{
+   display: flex;
+    margin-top: 3%;
+}
+.header-container span{    
+    transform: rotate(90deg);
+    margin-right: 7%;       
+    color:#C4C4C4;
+}
+.header-description-p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color:#4F4F4F;
+    
+}
+.central-img{
+    width:100%;
+    margin-top: 5%;
+}
+
+.recipe-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.ing-title{
+    font-family:'Playfair Display', serif;
+    font-size: 24px;
+    width: 700;
+    color:#333333
+
+}
+.ing-subtitle{
+    font-family:'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color:#333333;
+    font-weight: 400;
+    margin:5% 0;
+}
+
+.recipe-left{
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+input[type=checkbox]{
+   
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border:none;
+    margin-right: 2%;    
+}
+input[type=checkbox]:checked{
+    appearance: none;
+    background-color: #F2994A;
+    border-radius: 3px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    line-height: 25px;    
+}
+ul li{
+    margin-top: 3%;
+}
+
+.instructions{
+    margin-top: 5%;
+}
+.inst-item{
+    display: flex;
+    margin-top: 5%;
+}
+.number-list{
+    display: block;
+    text-align: center;
+    min-width: 36px;
+    height: 36px;
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;       
+    border-radius: 6px;   
+    background-color: #F2994A;;
+    color:#ffffff;
+    margin-right: 5%;  
+}
+
+.inst-description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.source{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BDBDBD;
+    margin-top: 10%;
+}
+.card{
+    
+    box-shadow: 0 0 20px #BDBDBD ;
+    border-radius: 12px;    
+    display: flex;
+    flex-direction: column;
+    padding: 20%;  
+    margin-top:30%;
+}
+.card span{
+    font-size: 30px;
+}
+
+.card-item{
+    display: flex;
+    margin:9% 0;    
+}
+
+#orange{    
+    color: #F2994A;
+}
+.card-1-info, .card-2-info, .card-3-info, .card-4-info {
+    margin-left: 7%;
+}
+.card-1-info-title{
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+.card-1-info-description{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;   
+    justify-content: center;
+    align-items: flex-end;
+    height: 5rem;
+    color:#828282; 
+    margin: 2% 0;   
+  }
+
+  @media (max-width:850px) {
+      body{
+          width: 95%;
+      }
+      .header-container{
+        width: 100%;
+        margin-top: 7%;
+      }
+      .header-name{
+          width: 100%;
+          font-size: 24px;
+      }
+      .header-description-p{
+          width: 100%;
+          font-size: 12px;
+      }
+      .header-container span{
+        font-size: medium;        
+        display: contents;      
+      }
+      .recipe-container{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0; 
+        padding-bottom: 3%; 
+        padding-left: 3%;         
+      }
+      .card-1{            
+            grid-column: 1/4;
+            margin-top: 0%;            
+      }     
+      .card-item{        
+            margin:3% 0;    
+    }
+        .card-1-info{
+            margin-left: 3%;
+    }
+        .card-1-info-title{       
+            font-size: 8px;
+            line-height: 10px;        
+    }
+        .card-1-info-description{
+            font-size: 10px;
+            line-height: 12px;        
+    }
+        .card span{
+            font-size: 15px;
+    }
+        .recipe-left{
+            margin-right:0%;
+            margin-top: 10%;
+    }
+        ul{       
+            font-size: 14px;        
+            line-height: 20px;    
+    }   
+        .ing-subtitle{        
+            font-size: 16px;
+    }   
+        .source{       
+            font-size: 12px;        
+    }    
+}    
